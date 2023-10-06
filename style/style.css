@@ -3,6 +3,99 @@
  padding: 0;
  box-sizing: border-box;   
 }
+body{
+	background: rgb(0,0,51);
+	background: radial-gradient(circle, rgba(0,0,51,1) 0%, rgba(0,0,0,1) 100%);
+	font-size: 1.4em;
+}
+h2{
+	font-size: 2em;
+}
 .debug{
     border: 1px solid red;
+}
+.box{
+	color: white;
+	position: relative;
+  	top: 50vh;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+	background-color: rgba(0,0,0, 0.5);
+	border: 2px solid #b78846;
+	width: 100%;
+ 	max-width: 600px;
+  	padding: 5px;
+	min-height: 300px;
+	text-align: center;
+	line-height: 100px;
+}
+.box:before,
+.box:after,
+.box-inner:before ,
+.box-inner:after{
+    content: "•";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #b78846;
+    border: 2px solid #b78846;
+    line-height: 14px;
+    text-align: center;
+}
+.box:before {
+	border-left: none;
+	border-top: none;
+	top: 5px;
+    left: 5px;
+  }
+.box:after {
+	border-right: none;
+	border-top: none;
+	top: 5px;
+    right: 5px;
+}
+.box-inner:before{
+	border-left: none;
+	border-bottom: none;
+	bottom: -1px;
+	left: -2px;
+} 
+.box-inner:after{
+	border-right: none;
+	border-bottom: none;
+	bottom: -1px;
+	right: -2px;
+}
+.box-inner{
+	position: relative;
+	min-height: 300px;
+	border: 2px solid #b78846;
+}
+.box button{
+	color: white;
+	position: relative;
+	border: 2px solid #b78846;
+  	width: 100px;
+	height: 40px;
+	background-color: transparent;
+	font-size: 1em;
+	font-weight: normal;
+	cursor: pointer;
+}
+#testo{
+	display: block;
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-weight: bold;
+	resize: none;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 2em;
+	width: 100%;
+	height: 2em;
+}
+#testo:focus{
+outline: none !important;
 }
